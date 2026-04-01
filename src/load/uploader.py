@@ -14,15 +14,58 @@ logger = logging.getLogger(__name__)
 class SupabaseUploader:
     """Handle batch uploads to Supabase"""
     
-    def __init__(self, client: SupabaseClient):
-        self.client = client.client
+    def __init__(self, supabase_client: SupabaseClient):
+        self.client = supabase_client.client
+    
+    def get_available_columns(self, table_name: str) -> List[str]:
+        """Get list of columns available in the table"""
+        try:
+            response = self.client.table(table_name).select("*").limit(1).execute()
+            if response.data:
+                columns = list(response.data[0].keys())
+                logger.debug(f"Available columns in {table_name}: {columns}")
+                return columns
+            else:
+                logger.warning(f"Table {table_name} is empty, cannot get columns")
+                return []
+        except Exception as e:
+            logger.error(f"Failed to get columns: {e}")
+            return []
     
     def delete_all(self, table_name: str) -> None:
-        """Delete all records from table"""
+        """Delete all records from table using available columns"""
         logger.info(f"Deleting all records from {table_name}")
+        
         try:
-            self.client.table(table_name).delete().neq("Wall Name", "NO_MATCH").execute()
-            logger.info("Delete successful")
+            # Get available columns
+            columns = self.get_available_columns(table_name)
+            
+            if not columns:
+                logger.warning("Cannot determine columns, skipping delete")
+                return
+            
+            # Use the first available column for delete condition
+            # Try common column names first
+            preferred_columns = ["unique id", "id", "Job Number", "Wall Name"]
+            delete_column = None
+            
+            for col in preferred_columns:
+                if col in columns:
+                    delete_column = col
+                    break
+            
+            # If none of the preferred columns found, use first column
+            if not delete_column and columns:
+                delete_column = columns[0]
+            
+            if delete_column:
+                logger.info(f"Using column '{delete_column}' for delete condition")
+                # Delete all records where the column is not null
+                self.client.table(table_name).delete().not_.is_(delete_column, "null").execute()
+                logger.info("Delete successful")
+            else:
+                logger.warning("No suitable column found for delete, skipping")
+                
         except Exception as e:
             logger.error(f"Delete failed: {e}")
             raise
@@ -54,13 +97,21 @@ class SupabaseUploader:
         
         # Prepare data
         df_processed = df.fillna(0)
+        # Convert datetime columns to string to avoid issues
+        for col in df_processed.columns:
+            if pd.api.types.is_datetime64_any_dtype(df_processed[col]):
+                df_processed[col] = df_processed[col].dt.strftime('%Y-%m-%d')
         
         # Convert to records
         rows = df_processed.to_dict(orient='records')
         
-        # Overwrite mode
+        # Overwrite mode - delete all existing data
         if mode == 'overwrite':
-            self.delete_all(table_name)
+            try:
+                self.delete_all(table_name)
+            except Exception as e:
+                logger.error(f"Delete failed: {e}")
+                logger.warning("Continuing with upload anyway...")
         
         # Upload in batches
         total_batches = (len(rows) + batch_size - 1) // batch_size
