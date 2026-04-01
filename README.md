@@ -117,8 +117,11 @@ touch src/utils/__init__.py
 
 ```bash
 python scripts/upload_pilelog.py
+```
 
 ## 🔧 Key Components
+
+```bash
 1. Excel Loader (excel_loader.py)
 Load Excel files with or without headers
 
