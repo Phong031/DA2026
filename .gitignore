@@ -1,0 +1,276 @@
+# ============================================
+# Python
+# ============================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyc
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+!notebooks/development/*.ipynb
+!notebooks/exploration/*.ipynb
+*/.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.envrc
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ============================================
+# Data files (Sensitive/Large)
+# ============================================
+# Raw data (large files, sensitive data)
+data/raw/
+data/processed/
+data/samples/
+*.csv
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.sqlite3
+
+# But keep sample data if needed
+!data/samples/README.md
+!data/samples/*.sample.csv
+
+# ============================================
+# Logs and Databases
+# ============================================
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# Configuration (with sensitive data)
+# ============================================
+# Sensitive config files
+config/.env
+config/local_*.yaml
+config/*.local.yaml
+config/credentials.yaml
+config/*.key
+config/*.pem
+config/*.cert
+
+# But keep example files
+!config/.env.example
+!config/*.example.yaml
+
+# ============================================
+# IDE / Editor Files
+# ============================================
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+.vscode/settings.json
+
+# IntelliJ / PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.~*
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# OS Generated Files
+# ============================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Linux
+.directory
+*.orig
+*.bak
+
+# ============================================
+# Project Specific
+# ============================================
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# Temporary files
+*.temp
+*.tmp
+
+# Archive files (not needed in repo)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Docker
+.dockerignore
+
+# AWS
+.aws/
+
+# ============================================
+# Documentation
+# ============================================
+# Exclude generated documentation
+docs/_build/
+docs/api/
+site/
+
+# ============================================
+# Testing
+# ============================================
+# Test artifacts
+tests/test_output/
+tests/__pycache__/
+tests/*.log
+
+# ============================================
+# Keep these files (override rules)
+# ============================================
+# Keep empty directories structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/samples/.gitkeep
+!logs/.gitkeep
+
+# Keep example files
+!*.example.py
+!*.example.yaml
+!config/.env.example
+
+# Keep requirements files
+!requirements.txt
+!requirements-dev.txt
+
+# Keep documentation
+!README.md
+!LICENSE
+!CONTRIBUTING.md

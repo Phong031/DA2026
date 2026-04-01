@@ -1,0 +1,22 @@
+data_sources:
+  pilelog:
+    type: "multi_excel"
+    required_columns:
+      - "Pile Number"
+      - "Date"
+      - "Auger"
+      - "Drill Depth"
+      - "Rock Depth"
+      - "SED/Beam"
+      - "SED/Beam Length"
+      - "Concrete Pump"
+      - "Sleeve"
+      - "Actual Rock"
+      - "Calc Conc"
+    table_name: "combined_pilelog_data"
+    upload_mode: "overwrite"
+    output_path: "data/processed/combined_pilelog_data.csv"
+
+upload:
+  batch_size: 500
+  fill_na: true
