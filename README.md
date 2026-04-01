@@ -27,7 +27,7 @@ This project automates the processing of pilelog data from Excel files:
 
 ## 📁 Project Structure
 
-`````Bash
+```Bash
 data_analytics_project/
 ├── src/ # Source code
 │ ├── extract/ # Data extraction modules
@@ -52,15 +52,16 @@ data_analytics_project/
 ├── requirements.txt # Python dependencies
 ├── setup_project.bat # Windows setup batch file
 └── README.md # This file
+```
 
 ## 🚀 Setup Instructions
 
 ### 1. Create Project Directory
 
-````bash
+```bash
 mkdir data_analytics_project
 cd data_analytics_project
-`````
+```
 
 ### 2. Create Virtual Environment
 
