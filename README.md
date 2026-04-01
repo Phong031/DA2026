@@ -27,7 +27,7 @@ This project automates the processing of pilelog data from Excel files:
 
 ## 📁 Project Structure
 
-```Bash
+`````Bash
 data_analytics_project/
 ├── src/ # Source code
 │ ├── extract/ # Data extraction modules
@@ -52,7 +52,7 @@ data_analytics_project/
 ├── requirements.txt # Python dependencies
 ├── setup_project.bat # Windows setup batch file
 └── README.md # This file
-```
+
 
 ## 🚀 Setup Instructions
 
@@ -61,9 +61,10 @@ data_analytics_project/
 ````bash
 mkdir data_analytics_project
 cd data_analytics_project
-```
+`````
 
 ### 2. Create Virtual Environment
+
 ```bash
 # Windows
 python -m venv venv
@@ -75,10 +76,13 @@ source venv/bin/activate
 ```
 
 ### 3. Install Dependencies
+
 ```bash
 pip install pandas python-dotenv supabase pyyaml openpyxl
 ```
+
 ### 4. Create Directory Structure
+
 ```bash
 # Windows
 mkdir src\extract src\transform src\load src\utils config scripts data\processed logs
@@ -87,7 +91,8 @@ mkdir src\extract src\transform src\load src\utils config scripts data\processed
 mkdir -p src/extract src/transform src/load src/utils config scripts data/processed logs
 ```
 
-### 5. Create __init__.py Files
+### 5. Create **init**.py Files
+
 ```Bash
 Create empty __init__.py in each src subdirectory:
 
@@ -107,7 +112,9 @@ touch src/utils/__init__.py
 ```
 
 ## 💻 Usage
+
 ### Run the Pipeline
+
 ```bash
 python scripts/upload_pilelog.py
 
@@ -162,26 +169,28 @@ Handles missing files and parsing errors
 ```
 
 ## 📊 Data Flow
+
 text
 Excel Files (50+ files)
-    ↓
+↓
 [Extract] Dynamic header detection
-    ↓
+↓
 Raw Data (Job Number + Wall Name added)
-    ↓
+↓
 [Combine] Concatenate all sheets
-    ↓
+↓
 Raw Combined CSV (data/processed/)
-    ↓
+↓
 [Transform] Date formatting + Sleeve extraction
-    ↓
+↓
 Cleaned Data
-    ↓
+↓
 [Load] Batch upload to Supabase
-    ↓
+↓
 Power BI Dashboard
 
 ## 🪟 Batch File Setup
+
 Create setup_project.bat in Project Root
 Navigate to your project folder:
 
@@ -190,6 +199,7 @@ C:\Users\Phong\OneDrive - ICB Construction\Phong\data\DA2026\Source Code\data_an
 Open Notepad (Windows + R → notepad)
 
 Copy and paste the following content:
+
 ```Bash
 batch
 @echo off
@@ -226,13 +236,14 @@ File → Save As
 
 Navigate to your project folder
 
-Save as type: All Files (*.*)
+Save as type: All Files (_._)
 
 File name: setup_project.bat
 
 Click Save
 
 ### Run the Batch File
+
 Double-click setup_project.bat in File Explorer
 
 ### What the Batch File Does:
@@ -244,8 +255,3 @@ Activates the environment
 Installs all required dependencies from requirements.txt
 
 Provides instructions for running the pipeline
-
-
-
-
-````
