@@ -46,7 +46,7 @@ class SupabaseUploader:
             
             # Use the first available column for delete condition
             # Try common column names first
-            preferred_columns = ["unique id", "id", "Job Number", "Wall Name"]
+            preferred_columns = ["unique id", "id", "Job Number", "Wall Name", "Asset Code"]
             delete_column = None
             
             for col in preferred_columns:

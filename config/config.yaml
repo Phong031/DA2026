@@ -47,6 +47,27 @@ job_data:
   upload_mode: "overwrite"
   batch_size: 20
 
+plant_equipment:
+  type: "csv"
+  file_path: "data/raw/plant and equipment list.csv"
+  required_columns:
+    - Asset Code
+    - Asset Serial
+    - Asset Type
+    - Display Name
+    - Fuel Type
+    - Groups/Fleets
+    - Machine Type
+    - Make
+    - Model
+    - Registration Plate
+    - VIN
+    - Weight Type
+    - Year
+  table_name: "plant_and_equipment_list"
+  upload_mode: "overwrite"
+  batch_size: 20
+
 upload:
   batch_size: 500
   fill_na: true
