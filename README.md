@@ -268,6 +268,7 @@ Place your data files in the following locations:
 | ----------------- | ----------------------------------------- | --------- |
 | Job Data          | `data/raw/5 Jobs Data.xlsx`               | Yes       |
 | Plant & Equipment | `data/raw/plant_and_equipment_list.csv`   | Yes       |
+| Concrete Type     | `data/raw/concrete_type.csv`              | Yes       |
 | Pilelog Files     | Configured in `config/pilelog_files.yaml` | Yes       |
 
 ### Running Individual Pipelines
@@ -278,6 +279,9 @@ python scripts/upload_job_data.py
 
 # Run plant and equipment pipeline
 python scripts/upload_plant_equipment.py
+
+# Run concrete type pipeline
+python scripts/upload_concrete_type.py
 
 # Run pilelog pipeline
 python scripts/upload_pilelog.py
