@@ -53,7 +53,6 @@ data_analytics_project/
 ├── setup_project.bat # Windows setup batch file
 └── README.md # This file
 
-```
 ## 🚀 Setup Instructions
 
 ### 1. Create Project Directory
