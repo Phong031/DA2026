@@ -259,3 +259,26 @@ Activates the environment
 Installs all required dependencies from requirements.txt
 
 Provides instructions for running the pipeline
+
+## 📁 Data Files
+
+Place your data files in the following locations:
+
+| File              | Location                                  | Required? |
+| ----------------- | ----------------------------------------- | --------- |
+| Job Data          | `data/raw/5 Jobs Data.xlsx`               | Yes       |
+| Plant & Equipment | `data/raw/plant_and_equipment_list.csv`   | Yes       |
+| Pilelog Files     | Configured in `config/pilelog_files.yaml` | Yes       |
+
+### Running Individual Pipelines
+
+```bash
+# Run job data pipeline
+python scripts/upload_job_data.py
+
+# Run plant and equipment pipeline
+python scripts/upload_plant_equipment.py
+
+# Run pilelog pipeline
+python scripts/upload_pilelog.py
+```
