@@ -27,6 +27,7 @@ This project automates the processing of pilelog data from Excel files:
 
 ## 📁 Project Structure
 
+```Bash
 data_analytics_project/
 ├── src/ # Source code
 │ ├── extract/ # Data extraction modules
@@ -51,6 +52,7 @@ data_analytics_project/
 ├── requirements.txt # Python dependencies
 ├── setup_project.bat # Windows setup batch file
 └── README.md # This file
+```
 
 ## 🚀 Setup Instructions
 
@@ -59,6 +61,7 @@ data_analytics_project/
 ````bash
 mkdir data_analytics_project
 cd data_analytics_project
+```
 
 ### 2. Create Virtual Environment
 ```bash
@@ -69,11 +72,12 @@ venv\Scripts\activate
 # Mac/Linux
 python3 -m venv venv
 source venv/bin/activate
+```
 
 ### 3. Install Dependencies
 ```bash
 pip install pandas python-dotenv supabase pyyaml openpyxl
-
+```
 ### 4. Create Directory Structure
 ```bash
 # Windows
@@ -81,11 +85,12 @@ mkdir src\extract src\transform src\load src\utils config scripts data\processed
 
 # Mac/Linux
 mkdir -p src/extract src/transform src/load src/utils config scripts data/processed logs
+```
 
 ### 5. Create __init__.py Files
+```Bash
 Create empty __init__.py in each src subdirectory:
 
-```bash
 # Windows
 echo. > src\__init__.py
 echo. > src\extract\__init__.py
@@ -99,6 +104,7 @@ touch src/extract/__init__.py
 touch src/transform/__init__.py
 touch src/load/__init__.py
 touch src/utils/__init__.py
+```
 
 ## 💻 Usage
 ### Run the Pipeline
@@ -153,6 +159,7 @@ Loads YAML configuration files
 Merges main config with file paths config
 
 Handles missing files and parsing errors
+```
 
 ## 📊 Data Flow
 text
@@ -183,7 +190,7 @@ C:\Users\Phong\OneDrive - ICB Construction\Phong\data\DA2026\Source Code\data_an
 Open Notepad (Windows + R → notepad)
 
 Copy and paste the following content:
-
+```Bash
 batch
 @echo off
 echo ============================================
@@ -211,6 +218,7 @@ echo To run the pipeline:
 echo python scripts\upload_pilelog.py
 echo.
 pause
+```
 
 ### Save as setup_project.bat:
 
@@ -236,6 +244,7 @@ Activates the environment
 Installs all required dependencies from requirements.txt
 
 Provides instructions for running the pipeline
+
 
 
 
