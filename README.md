@@ -173,7 +173,7 @@ Handles missing files and parsing errors
 
 ## 📊 Data Flow
 
-text
+```bash
 Excel Files (50+ files)
 ↓
 [Extract] Dynamic header detection
@@ -191,6 +191,7 @@ Cleaned Data
 [Load] Batch upload to Supabase
 ↓
 Power BI Dashboard
+```
 
 ## 🪟 Batch File Setup
 
