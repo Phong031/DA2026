@@ -14,6 +14,7 @@ A modular ETL (Extract, Transform, Load) pipeline for processing pilelog data fr
 - [Common Issues & Solutions](#common-issues--solutions)
 - [Extending the Pipeline](#extending-the-pipeline)
 - [Performance Metrics](#performance-metrics)
+- [Batch File Setup](#batch-file-setup)
 
 ## 🎯 Project Overview
 
@@ -48,87 +49,140 @@ data_analytics_project/
 │ └── processed/ # Processed data output
 ├── logs/ # Log files
 ├── requirements.txt # Python dependencies
+├── setup_project.bat # Windows setup batch file
 └── README.md # This file
 
-2. Create Virtual Environment
-   bash
+## 🚀 Setup Instructions
 
+### 1. Create Project Directory
+
+````bash
+mkdir data_analytics_project
+cd data_analytics_project
+
+### 2. Create Virtual Environment
+```bash
 # Windows
-
 python -m venv venv
 venv\Scripts\activate
 
 # Mac/Linux
-
 python3 -m venv venv
 source venv/bin/activate
 
-3. Install Dependencies
-   bash
-   pip install pandas python-dotenv supabase pyyaml openpyxl
+### 3. Install Dependencies
+```bash
+pip install pandas python-dotenv supabase pyyaml openpyxl
 
-4. Create Directory Structure
-   bash
-   mkdir src\extract src\transform src\load src\utils config scripts data\processed logs
-
-5. Create init.py Files
-   Create empty **init**.py in each src subdirectory:
-
-bash
-
+### 4. Create Directory Structure
+```bash
 # Windows
+mkdir src\extract src\transform src\load src\utils config scripts data\processed logs
 
-echo. > src\_\_init**.py
-echo. > src\extract\_\_init**.py
-echo. > src\transform\_\_init**.py
-echo. > src\load\_\_init**.py
-echo. > src\utils\_\_init\_\_.py
+# Mac/Linux
+mkdir -p src/extract src/transform src/load src/utils config scripts data/processed logs
 
-6. Configure Environment
-   config/.env
+### 5. Create __init__.py Files
+Create empty __init__.py in each src subdirectory:
 
-bash
-SUPABASE_URL="https://your-project.supabase.co"
-SUPABASE_KEY="your-supabase-api-key"
+```bash
+# Windows
+echo. > src\__init__.py
+echo. > src\extract\__init__.py
+echo. > src\transform\__init__.py
+echo. > src\load\__init__.py
+echo. > src\utils\__init__.py
 
-💻 Usage
-Run the Pipeline
-bash
+# Mac/Linux
+touch src/__init__.py
+touch src/extract/__init__.py
+touch src/transform/__init__.py
+touch src/load/__init__.py
+touch src/utils/__init__.py
+
+## 💻 Usage
+### Run the Pipeline
+```bash
 python scripts/upload_pilelog.py
 
-📊 Data Flow
+## 🔧 Key Components
+1. Excel Loader (excel_loader.py)
+Load Excel files with or without headers
+
+Get sheet names
+
+Load sheets as raw data for header detection
+
+2. Pilelog Extractor (pilelog_extractor.py)
+Dynamically finds header rows containing required columns
+
+Extracts job numbers from first row
+
+Adds metadata (Job Number, Wall Name)
+
+Processes all sheets in each file
+
+3. Pilelog Transformer (pilelog_transformer.py)
+Converts Calc Conc to float with 2 decimals
+
+Formats dates to dd/mm/yyyy
+
+Extracts temporary and permanent sleeve lengths using regex:
+
+Patterns: temp Xm, perm Xm, X + jensen Y
+
+4. Supabase Client (supabase_client.py)
+Singleton pattern for single connection
+
+Initializes with URL and API key
+
+Provides client instance
+
+5. Uploader (uploader.py)
+Batch upload with configurable batch size
+
+Overwrite mode: deletes existing data using any column
+
+Append mode: adds new records
+
+Rate limiting between batches (0.05s delay)
+
+6. Config Loader (config_loader.py)
+Loads YAML configuration files
+
+Merges main config with file paths config
+
+Handles missing files and parsing errors
+
+## 📊 Data Flow
 text
 Excel Files (50+ files)
-↓
+    ↓
 [Extract] Dynamic header detection
-↓
+    ↓
 Raw Data (Job Number + Wall Name added)
-↓
+    ↓
 [Combine] Concatenate all sheets
-↓
+    ↓
 Raw Combined CSV (data/processed/)
-↓
+    ↓
 [Transform] Date formatting + Sleeve extraction
-↓
+    ↓
 Cleaned Data
-↓
+    ↓
 [Load] Batch upload to Supabase
-↓
+    ↓
 Power BI Dashboard
 
-'''
-You can create the setup_project.bat file directly in your project root folder. Here's how:
-
-Method 1: Using Notepad (Easiest)
+## 🪟 Batch File Setup
+Create setup_project.bat in Project Root
 Navigate to your project folder:
 
 text
 C:\Users\Phong\OneDrive - ICB Construction\Phong\data\DA2026\Source Code\data_analytics_project
-Open Notepad:
+Open Notepad (Windows + R → notepad)
 
-Press Windows + R, type notepad, press Enter
-
-Copy and paste the content:
+Copy and paste the following content:
 
 batch
 @echo off
@@ -157,15 +211,32 @@ echo To run the pipeline:
 echo python scripts\upload_pilelog.py
 echo.
 pause
-Save the file:
 
-Click File → Save As
+### Save as setup_project.bat:
 
-Navigate to your project folder: C:\Users\Phong\OneDrive - ICB Construction\Phong\data\DA2026\Source Code\data_analytics_project
+File → Save As
+
+Navigate to your project folder
+
+Save as type: All Files (*.*)
 
 File name: setup_project.bat
 
-Save as type: All Files (_._)
-
 Click Save
-'''
+
+### Run the Batch File
+Double-click setup_project.bat in File Explorer
+
+### What the Batch File Does:
+
+Creates Python virtual environment
+
+Activates the environment
+
+Installs all required dependencies from requirements.txt
+
+Provides instructions for running the pipeline
+
+
+
+````
