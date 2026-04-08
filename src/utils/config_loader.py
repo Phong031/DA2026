@@ -79,3 +79,27 @@ class ConfigLoader:
         except Exception as e:
             logger.error(f"Failed to get pilelog config: {e}")
             raise
+
+    def get_claim_config(self) -> Dict[str, Any]:
+        """
+        Load claim configuration and file paths from separate YAML
+    
+        Returns:
+            Dictionary with claim config including file list
+        """
+        # Load main config
+        main_config = self.load_yaml("config.yaml")
+        claim_config = main_config['data_sources']['claim'].copy()
+    
+        # Load file list from separate YAML
+        files_config_file = claim_config.get('files_config')
+    
+        if files_config_file:
+            files_data = self.load_yaml(files_config_file)
+        
+            if 'claim_files' in files_data:
+                file_paths = files_data['claim_files']
+                claim_config['file_paths'] = file_paths
+                logger.info(f"Loaded {len(file_paths)} claim file paths from {files_config_file}")
+    
+        return claim_config

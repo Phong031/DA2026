@@ -17,56 +17,56 @@ data_sources:
     upload_mode: "overwrite"
     output_path: "data/processed/combined_pilelog_data.csv"
 
-job_data:
-  type: "excel"
-  file_path: "data/raw/5 Jobs Data.xlsx"
-  required_columns:
-    - Address
-    - City
-    - Estimator
-    - Estimator Email
-    - First Received Date
-    - Foreman
-    - Foreman Email
-    - Foreman Phone
-    - Job Area
-    - Job Description
-    - Job Name
-    - Job Number
-    - Job Value
-    - Main Contractor
-    - Onsite Finish
-    - Onsite Start
-    - Suburb
-    - Successful Date
-    - Supervisor
-    - Supervisor Email
-    - Supervisor Phone
-    - unique id
-  table_name: "job_data"
-  upload_mode: "overwrite"
-  batch_size: 20
+  job_data:
+    type: "excel"
+    file_path: "data/raw/5 Jobs Data.xlsx"
+    required_columns:
+      - Address
+      - City
+      - Estimator
+      - Estimator Email
+      - First Received Date
+      - Foreman
+      - Foreman Email
+      - Foreman Phone
+      - Job Area
+      - Job Description
+      - Job Name
+      - Job Number
+      - Job Value
+      - Main Contractor
+      - Onsite Finish
+      - Onsite Start
+      - Suburb
+      - Successful Date
+      - Supervisor
+      - Supervisor Email
+      - Supervisor Phone
+      - unique id
+    table_name: "job_data"
+    upload_mode: "overwrite"
+    batch_size: 20
 
-plant_equipment:
-  type: "csv"
-  file_path: "data/raw/plant and equipment list.csv"
-  required_columns:
-    - Asset Code
-    - Asset Serial
-    - Asset Type
-    - Display Name
-    - Fuel Type
-    - Groups/Fleets
-    - Machine Type
-    - Make
-    - Model
-    - Registration Plate
-    - VIN
-    - Weight Type
-    - Year
-  table_name: "plant_and_equipment_list"
-  upload_mode: "overwrite"
-  batch_size: 20
+  plant_equipment:
+    type: "csv"
+    file_path: "data/raw/plant and equipment list.csv"
+    required_columns:
+      - Asset Code
+      - Asset Serial
+      - Asset Type
+      - Display Name
+      - Fuel Type
+      - Groups/Fleets
+      - Machine Type
+      - Make
+      - Model
+      - Registration Plate
+      - VIN
+      - Weight Type
+      - Year
+    table_name: "plant_and_equipment_list"
+    upload_mode: "overwrite"
+    batch_size: 20
 
   concrete_type:
     type: "csv"
@@ -78,6 +78,13 @@ plant_equipment:
     table_name: "concrete_type"
     upload_mode: "overwrite"
     batch_size: 50
+
+  claim:
+    type: "multi_excel"
+    files_config: "claim_files.yaml"
+    table_name: "combined_claim_data"
+    upload_mode: "overwrite"
+    batch_size: 100
 
 upload:
   batch_size: 500

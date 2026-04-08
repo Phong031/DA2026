@@ -9,8 +9,8 @@ project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
 import pandas as pd
-from dotenv import load_dotenv
-import os
+from dotenv import load_dotenv # type: ignore
+import os 
 import logging
 import time
 from supabase import create_client
