@@ -86,6 +86,52 @@ data_sources:
     upload_mode: "overwrite"
     batch_size: 100
 
+  lentune_invoices:
+    type: "csv"
+    file_path: "data/raw/Lentune_Invoice_Data - adding month.csv"
+    required_columns:
+      - Categories
+      - Checked Date
+      - First Approved Date
+      - Invoice Number
+      - Line Cost Code
+      - Line Description
+      - Line Excluding
+      - Line Including
+      - Line Price
+      - Line Project
+      - Line Quantity
+      - Line Tax
+      - Processed Date
+      - Second Approved Date
+      - Status
+      - Supplier Description
+      - Transaction Date
+    table_name: "lentune_invoices_data"
+    upload_mode: "append" # APPEND mode for invoices
+    batch_size: 500
+
+  month_end_data:
+    type: "excel"
+    file_path: "data/raw/financial report table - adding month.xlsx"
+    table_name: "month_end_data"
+    upload_mode: "append" # APPEND mode for monthly reports
+    batch_size: 50
+
+  programme_data:
+    type: "excel"
+    file_path: "data/raw/programme data - adding month.xlsx"
+    table_name: "programme_data"
+    upload_mode: "append" # APPEND mode for programme data
+    batch_size: 25
+
+  categories_breakdown_data:
+    type: "excel"
+    file_path: "data/raw/categories breakdown data - adding month.xlsx"
+    table_name: "categories_breakdown_data"
+    upload_mode: "append"
+    batch_size: 50
+
 upload:
   batch_size: 500
   fill_na: true

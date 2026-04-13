@@ -7,6 +7,10 @@ from .job_data_extractor import JobDataExtractor
 from .plant_equipment_extractor import PlantEquipmentExtractor
 from .concrete_type_extractor import ConcreteTypeExtractor
 from .claim_extractor import ClaimExtractor
+from .lentune_extractor import LentuneExtractor
+from .month_end_extractor import MonthEndExtractor
+from .programme_extractor import ProgrammeExtractor
+from .categories_breakdown_extractor import CategoriesBreakdownExtractor
 
 __all__ = [
     'ExcelLoader', 
@@ -14,5 +18,9 @@ __all__ = [
     'JobDataExtractor',
     'PlantEquipmentExtractor',
     'ConcreteTypeExtractor',
-    'ClaimExtractor'
+    'ClaimExtractor',
+    'LentuneExtractor',
+    'MonthEndExtractor',
+    'ProgrammeExtractor',
+    'CategoriesBreakdownExtractor'
 ]
