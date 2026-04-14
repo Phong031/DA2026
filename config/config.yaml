@@ -132,6 +132,13 @@ data_sources:
     upload_mode: "append"
     batch_size: 50
 
+  quotation_data:
+    type: "csv"
+    file_path: "data/raw/Combined_Quotation - adding month.csv"
+    table_name: "combined_quotation_data"
+    upload_mode: "append"
+    batch_size: 100
+
 upload:
   batch_size: 500
   fill_na: true

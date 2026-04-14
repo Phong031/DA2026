@@ -11,6 +11,7 @@ from .lentune_extractor import LentuneExtractor
 from .month_end_extractor import MonthEndExtractor
 from .programme_extractor import ProgrammeExtractor
 from .categories_breakdown_extractor import CategoriesBreakdownExtractor
+from .quotation_extractor import QuotationExtractor
 
 __all__ = [
     'ExcelLoader', 
@@ -22,5 +23,6 @@ __all__ = [
     'LentuneExtractor',
     'MonthEndExtractor',
     'ProgrammeExtractor',
-    'CategoriesBreakdownExtractor'
+    'CategoriesBreakdownExtractor',
+    'QuotationExtractor'
 ]
