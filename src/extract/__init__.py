@@ -12,6 +12,7 @@ from .month_end_extractor import MonthEndExtractor
 from .programme_extractor import ProgrammeExtractor
 from .categories_breakdown_extractor import CategoriesBreakdownExtractor
 from .quotation_extractor import QuotationExtractor
+from .internal_plant_cost_extractor import InternalPlantCostExtractor
 
 __all__ = [
     'ExcelLoader', 
@@ -24,5 +25,6 @@ __all__ = [
     'MonthEndExtractor',
     'ProgrammeExtractor',
     'CategoriesBreakdownExtractor',
-    'QuotationExtractor'
+    'QuotationExtractor',
+    'InternalPlantCostExtractor'
 ]
