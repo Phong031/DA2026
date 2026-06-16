@@ -194,7 +194,7 @@ class ClaimExtractor:
             # Permanent sleeve condition
             permanent_condition = sleeve_condition & description_series.str.contains(r'thin|perm|spira', case=False, na=False)
             if 'Rate' in df.columns:
-                rate_condition = pd.to_numeric(df['Rate'], errors='coerce') < 900
+                rate_condition = pd.to_numeric(df['Rate'], errors='coerce') < 3000
                 permanent_condition = permanent_condition & rate_condition.fillna(False)
             
             # Temporary sleeve condition

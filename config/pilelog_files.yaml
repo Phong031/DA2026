@@ -1,54 +1,83 @@
 # List of pilelog file paths
 pilelog_files:
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/8401 - 8600/8438 V&B SUMMERSET HALF MOON BAY/CONSTRUCTION/QUALITY Internal/8438 Pile Log Internal v5.xlsx
+  # 8401 - 8600
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/63 VUKSICH & BORICH FINE/8438 V&B SUMMERSET HALF MOON BAY/CONSTRUCTION/QUALITY Internal/8438 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/8401 - 8600/8573 MARCH CATO CARTWRIGHT RD/CONSTRUCTION/QUALITY Internal/8573 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/8601 - 8800/8649 PIPELINE CIVIL TRAM VALLEY RD SWANSON/CONSTRUCTION/QUALITY Internal/8649 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/8601 - 8800/8689 GAILBRAITH BUILDERS 2-123 BASSETT RD REMUERA/CONSTRUCTION/QUALITY Internal/8689 Pile Log Internal v5.xlsx
+
+  # 8601 - 8800
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/8649 PIPELINE CIVIL TRAM VALLEY RD SWANSON/CONSTRUCTION/QUALITY Internal/8649 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/8689 GAILBRAITH BUILDERS 2-123 BASSETT RD REMUERA/CONSTRUCTION/QUALITY Internal/8689 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/8601 - 8800/8727 WAITI DEVELOPMENTS 1080 EAST COAST RD STGE 2/CONSTRUCTION/QUALITY Internal/8727 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/8601 - 8800/8736 MIKE ESPIE 61A STOTT AVE BIRKDALE/CONSTRUCTION/QUALITY Internal/8736 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/8801 - 9000/8853 C3 30 PRICES RD WIRI/CONSTRUCTION/QUALITY Internal/8853 Pile Log Internal v5.xlsx
+
+  # 8801 - 9000
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/7E C3 FILE/8853 C3 30 PRICES RD WIRI/CONSTRUCTION/QUALITY Internal/8853 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/8801 - 9000/8922 STONEDALE 36 ANNMARIE AVE FLAT BUSH/CONSTRUCTION/QUALITY Internal/8922 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9001 - 9200/9081 MARCH CATO THE HILL ELLERSLIE MCW/CONSTRUCTION/QUALITY Internal/9081 Pile Log Internal v5.xlsx
+
+  # 9001 - 9200
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/9001 GRANT LETICA 16-18 SEAVIEW ROAD PIHA/CONSTRUCTION/QUALITY Internal/9001 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9001 - 9200/9023 KDL PAERATA RISE STAGE 10/CONSTRUCTION/QUALITY Internal/9023 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/46A MARCH CATO FILE/9081 MARCH CATO THE HILL ELLERSLIE MCW/CONSTRUCTION/QUALITY Internal/9081 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9001 - 9200/9112 EARTHCO CIVIL 60 KAIPATIKI RD SP2/CONSTRUCTION/QUALITY Internal/9112 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9001 - 9200/9136 GOC 95 - 99 DIANA DR GLENFIELD/CONSTRUCTION/QUALITY Internal/9136 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9201 - 9400/9273 VENTIA 32 KAY RD SWANSON/CONSTRUCTION/QUALITY Internal/9273 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9201 - 9400/9276 ROSS REID 264 HINGAIA RD KARAKA/CONSTRUCTION/QUALITY Internal/9276 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/22 GIBSON O'CONNOR FILE/9136 GOC 95 - 99 DIANA DR GLENFIELD/CONSTRUCTION/QUALITY Internal/9136 Pile Log Internal v5.xlsx
+
+  # 9201 - 9400
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/62A VENTIA FILE/9273 VENTIA 32 KAY RD SWANSON/CONSTRUCTION/QUALITY Internal/9273 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/53 ROSS REID FILE/9276 ROSS REID 264 HINGAIA RD KARAKA/CONSTRUCTION/QUALITY Internal/9276 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9201 - 9400/9307 ROSS REID MLC ROTOTUNA VILLAGE/CONSTRUCTION/QUALITY Internal/9307 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9201 - 9400/9321 DOMINION 41 JERVOIS RD HERNE BAY/CONSTRUCTION/QUALITY Internal/9321 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9201 - 9400/9327 VENTIA 96 OPANUKU RD HENDERSON VALLEY/CONSTRUCTION/QUALITY Internal/9327 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9201 - 9400/9347 SIMON AYRIS (NAYLOR LOVE) 24 HEATON GROVE CHATSWOOD/CONSTRUCTION/QUALITY Internal/9347 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/9347 SIMON AYRIS (NAYLOR LOVE) 24 HEATON GROVE CHATSWOOD/CONSTRUCTION/QUALITY Internal/9347 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9201 - 9400/9365 HICKS BEACHLANDS STAGE 2/CONSTRUCTION/QUALITY Internal/9365 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9201 - 9400/9369 VENTIA, HUIA RD RP6.8/CONSTRUCTION/QUALITY Internal/9369 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9201 - 9400/9370 VENTIA HUIA RP 11.347/CONSTRUCTION/QUALITY Internal/9370 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/62A VENTIA FILE/9370 VENTIA HUIA RP 11.347/CONSTRUCTION/QUALITY Internal/9370 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/62A VENTIA FILE/9371 VENTIA, KONINI RP 1.501/CONSTRUCTION/QUALITY Internal/9371 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9201 - 9400/9388 EASTERN BUSWAY ALLIANCE, Z4-178A BURSWOOD/CONSTRUCTION/QUALITY Internal/9388 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9401 - 9600/9405 MACRENNIE 18 WESTPOINT DR STAGE 2 PILING/CONSTRUCTION/QUALITY Internal/9405 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9401 - 9600/9449 MACKENZIE CIVIL ARA HILLS STAGE 2 RETAINING WALLS/CONSTRUCTION/QUALITY Internal/9449 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9401 - 9600/9496 WAIDE 98 HOBSONVILLE RD PROJECT 2/CONSTRUCTION/QUALITY Internal/9496 Pile Log Internal v5.xlsx
+
+  # 9401 - 9600
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/46 MACRENNE FILE/9405 MACRENNIE 18 WESTPOINT DR STAGE 2 PILING/CONSTRUCTION/QUALITY Internal/9405 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/46C MCKENZIE CIVIL FILE/9449 MACKENZIE CIVIL ARA HILLS STAGE 2 RETAINING WALLS/CONSTRUCTION/QUALITY Internal/9449 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/64A WAIDE FILE/9496 WAIDE 98 HOBSONVILLE RD PROJECT 2/CONSTRUCTION/QUALITY Internal/9496 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/3 ASPEC FILE/9502 ASPEC HIGHBROOK WATERSPORTS CENTRE/CONSTRUCTION/QUALITY Internal/9502 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9401 - 9600/9519 VENTIA HUIA RD RP 4.072/CONSTRUCTION/QUALITY Internal/9519 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/62A VENTIA FILE/9519 VENTIA HUIA RD RP 4.072/CONSTRUCTION/QUALITY Internal/9519 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9401 - 9600/9557 DOWNER KUAOTUNU HILL SH25 RW/CONSTRUCTION/QUALITY Internal/9557 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9401 - 9600/9570 VENTIA, WARNER PARK/CONSTRUCTION/QUALITY Internal/9570 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9401 - 9600/9586 QUIP GROUP 25 WARNER PARK AVE LAINGHOLM/CONSTRUCTION/QUALITY Internal/9586 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/9586 QUIP GROUP 25 WARNER PARK AVE LAINGHOLM/CONSTRUCTION/QUALITY Internal/9586 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9401 - 9600/9598 MACRENNIE NATIONAL STORAGE MT ALBERT/CONSTRUCTION/QUALITY Internal/9598 Pile Log Internal v5.xlsx
+
+  # 9601 - 9800
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9610 VENTIA REDHILL SLIP REPAIR/CONSTRUCTION/QUALITY Internal/9610 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9613 MACRENNIE CENTURY BATTERIES PRICES RD/CONSTRUCTION/QUALITY Internal/9613 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9618 MARCH CATO MILLDALE U-CULVERT WORKS/CONSTRUCTION/QUALITY Internal/9618 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9657 CAMERON MCDONALD 44 RAYMOND TERRACE NORTHCOTE/CONSTRUCTION/QUALITY Internal/9657 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9659 MARCH CATO, 2 DUCK CREEK RD/CONSTRUCTION/QUALITY Internal/9659 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9668 DONOVAN PEREIRA, SNELLS BEACH/CONSTRUCTION/QUALITY Internal/9668 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/46A MARCH CATO FILE/9659 MARCH CATO, 2 DUCK CREEK RD/CONSTRUCTION/QUALITY Internal/9659 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/9668 DONOVAN PEREIRA, SNELLS BEACH/CONSTRUCTION/QUALITY Internal/9668 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9672 UWE KLUGER, 132 ISLAND BAY ROAD, BEACH HAVEN/CONSTRUCTION/QUALITY Internal/9672 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9686 KMJB HARRIS 544 RICHARDSON RD MT ROSKILL/CONSTRUCTION/QUALITY Internal/9686 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9695 EDC 57 BRAEMAR RD/CONSTRUCTION/QUALITY Internal/9695 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9699 CONNELL MAUNGATUROTO SUBSTATION/CONSTRUCTION/QUALITY Internal/9699 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/41D INDESCO/9708 INDESCO 39 GATEWAY PARK DR POKENO/CONSTRUCTION/QUALITY Internal/9708 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9723 NZ STRONG NEW WORLD EASTRIDGE/CONSTRUCTION/QUALITY Internal/9723 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9727 VENTIA TASMAN VIEW/CONSTRUCTION/QUALITY Internal/9727 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9730 HEB LEWIS ST BLOCKHOUSE BAY SLIP/CONSTRUCTION/QUALITY Internal/9730 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9755 CM PROJECTS, 5 STACK STR/CONSTRUCTION/QUALITY Internal/9755 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9601 - 9800/9788 TDM PARK ESTATE STAGE 3 & 4/CONSTRUCTION/QUALITY Internal/9788 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9823 CITY SITEWORKS, 125 MURPHYS RD/CONSTRUCTION/QUALITY Internal/9823 Pile Log Internal v5.xlsx
+
+  # 9801 - 10000
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/9A CITYSITE WORK FILE/9823 CITY SITEWORKS, 125 MURPHYS RD/CONSTRUCTION/QUALITY Internal/9823 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9834 WM CONSTRUCTION, ROSYTHE BRIDGE/CONSTRUCTION/QUALITY Internal/9834 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9871 JFC AHUROA RD RECOVERY WORKS/CONSTRUCTION/QUALITY Internal/9871 Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9903 W&H METLIFECARE ROTOTUNA/CONSTRUCTION/QUALITY Internal/9903 - Pile Log Internal v5.xlsx
-  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9905 AUCKLAND KART SPORT COLIN DALE TRACK/CONSTRUCTION/QUALITY Internal/9905 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9852 BRACEWELL HAWKINS PARNELL APARTMENTS/CONSTRUCTION/QUALITY Internal/9852 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/41A JFC FILE/9871 JFC AHUROA RD RECOVERY WORKS/CONSTRUCTION/QUALITY Internal/9871 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/66 WATTS & HUGHES FILE/9903 W&H METLIFECARE ROTOTUNA/CONSTRUCTION/QUALITY Internal/9903 - Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9904 DICKSON GRAY ELECTRICAL KENETIC HALSEY ST GANTRY/CONSTRUCTION/QUALITY Internal/9904 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/9905 AUCKLAND KART SPORT COLIN DALE TRACK/CONSTRUCTION/QUALITY Internal/9905 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9913 DINES MILLDALE FAST TRACK EARTHWORKS/CONSTRUCTION/QUALITY Internal/9913 Pile Log Internal v5.xlsx
   - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9914 KMJB HARRIS LTD 5-7 CLEMENTS ST OTAHUHU/CONSTRUCTION/QUALITY Internal/9914 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9917 V&B, SUMMERSET HALF MOON BAY/CONSTRUCTION/QUALITY Internal/9917 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/Jobs - Datastore/9801 - 10000/9966 DOWNER, KAHIKATEA RD/CONSTRUCTION/QUALITY Internal/9966 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/24A GREENSCENE FILE/9968 GREENSCENE, HARBOUR VIEW RD/CONSTRUCTION/QUALITY Internal/9968 Pile Log Internal v5.xlsx
+
+  # 10001 - 10200
+  - C:/Users/Phong/ICB Construction/ICB - SharePoint Datastore/Jobs/1. Completed/46A MARCH CATO FILE/10003 MARCH CATO 11 LORI PLACE/CONSTRUCTION/QUALITY Internal/10003 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/Jobs - Datastore/10001 - 10200/10069 MARCH CATO REMEDIATION WALL 533 ALBANY HW/CONSTRUCTION/QUALITY Internal/10069 Pile Log Internal v5.xlsx
+  - C:/Users/Phong/ICB Construction/Jobs - Datastore/10001 - 10200/10089 NAYLOR LOVE B230 - WWMH 5.1 TEMP RETAINING/CONSTRUCTION/QUALITY Internal/10089 Pile Log Internal v5.xlsx

@@ -25,12 +25,18 @@ class PileLogExtractor:
             if all(col in row_values for col in self.required_columns):
                 return idx
         return None
-    
+              
     def _extract_job_number(self, sheet_data: pd.DataFrame) -> str:
         """Extract job number from first row, second column"""
         try:
             first_row_text = str(sheet_data.iloc[0, 1])
-            job_number = ''.join(filter(str.isdigit, first_row_text))[:4]
+            # Extract all leading digits by iterating
+            job_number = ''
+            for char in first_row_text.strip():
+                if char.isdigit():
+                    job_number += char
+                else:
+                    break
             return job_number if job_number else "0000"
         except:
             return "0000"

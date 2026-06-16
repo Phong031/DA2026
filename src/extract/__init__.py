@@ -13,6 +13,8 @@ from .programme_extractor import ProgrammeExtractor
 from .categories_breakdown_extractor import CategoriesBreakdownExtractor
 from .quotation_extractor import QuotationExtractor
 from .internal_plant_cost_extractor import InternalPlantCostExtractor
+from .workshop_cost_extractor import WorkshopCostExtractor
+from .company_cost_extractor import CompanyCostExtractor
 
 __all__ = [
     'ExcelLoader', 
@@ -26,5 +28,7 @@ __all__ = [
     'ProgrammeExtractor',
     'CategoriesBreakdownExtractor',
     'QuotationExtractor',
-    'InternalPlantCostExtractor'
+    'InternalPlantCostExtractor',
+    'WorkshopCostExtractor',
+    'CompanyCostExtractor'
 ]
